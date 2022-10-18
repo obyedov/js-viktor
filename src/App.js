@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+
+const student = {
+  id:1,
+  name: "John",
+  age: 25,
+  language: "Italian",
+}
+
+const studentGirlfriends = [
+  {
+    studentId: 1,
+    name: "Anna",
+    age: 20,
+    language: "russian",
+  },
+  {
+    studentId: 2,
+    name: "Sara",
+    age: 19,
+    language: "italian",
+  }
+]
+
+console.log(studentGirlfriends.find(a => a.studentId === student.id).age)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
